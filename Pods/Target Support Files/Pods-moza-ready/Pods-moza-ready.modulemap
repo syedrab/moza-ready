@@ -1,0 +1,6 @@
+framework module Pods_moza_ready {
+  umbrella header "Pods-moza-ready-umbrella.h"
+
+  export *
+  module * { export * }
+}
