@@ -18,6 +18,11 @@
 		D1A73B721F04AD6700F3E753 /* moza_readyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B711F04AD6700F3E753 /* moza_readyTests.swift */; };
 		D1A73B7D1F04AD6700F3E753 /* moza_readyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B7C1F04AD6700F3E753 /* moza_readyUITests.swift */; };
 		D1A73B8B1F04B11C00F3E753 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1A73B8A1F04B11C00F3E753 /* GoogleService-Info.plist */; };
+		D1A73B901F04C39D00F3E753 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B8F1F04C39D00F3E753 /* FancyView.swift */; };
+		D1A73B931F04C42900F3E753 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B921F04C42900F3E753 /* Constants.swift */; };
+		D1A73B951F04C63500F3E753 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B941F04C63500F3E753 /* RoundButton.swift */; };
+		D1A73B971F04C81D00F3E753 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B961F04C81D00F3E753 /* FancyField.swift */; };
+		D1A73B991F04C94A00F3E753 /* FancyButotn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B981F04C94A00F3E753 /* FancyButotn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,11 @@
 		D1A73B7C1F04AD6700F3E753 /* moza_readyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moza_readyUITests.swift; sourceTree = "<group>"; };
 		D1A73B7E1F04AD6700F3E753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1A73B8A1F04B11C00F3E753 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1A73B8F1F04C39D00F3E753 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		D1A73B921F04C42900F3E753 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D1A73B941F04C63500F3E753 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		D1A73B961F04C81D00F3E753 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		D1A73B981F04C94A00F3E753 /* FancyButotn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButotn.swift; sourceTree = "<group>"; };
 		DA0881498EACED107704E932 /* Pods-moza-readyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moza-readyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moza-readyTests/Pods-moza-readyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +136,7 @@
 		D1A73B5B1F04AD6700F3E753 /* moza-ready */ = {
 			isa = PBXGroup;
 			children = (
+				D1A73B911F04C41600F3E753 /* Uti */,
 				D1A73B8E1F04B42200F3E753 /* Controller */,
 				D1A73B8D1F04B41F00F3E753 /* View */,
 				D1A73B8C1F04B41C00F3E753 /* Model */,
@@ -167,6 +178,10 @@
 		D1A73B8D1F04B41F00F3E753 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D1A73B8F1F04C39D00F3E753 /* FancyView.swift */,
+				D1A73B941F04C63500F3E753 /* RoundButton.swift */,
+				D1A73B961F04C81D00F3E753 /* FancyField.swift */,
+				D1A73B981F04C94A00F3E753 /* FancyButotn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -177,6 +192,14 @@
 				D1A73B5E1F04AD6700F3E753 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D1A73B911F04C41600F3E753 /* Uti */ = {
+			isa = PBXGroup;
+			children = (
+				D1A73B921F04C42900F3E753 /* Constants.swift */,
+			);
+			name = Uti;
 			sourceTree = "<group>";
 		};
 		F2F254BC12881ABF54A27F2F /* Pods */ = {
@@ -477,8 +500,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A73B971F04C81D00F3E753 /* FancyField.swift in Sources */,
 				D1A73B5F1F04AD6700F3E753 /* SignInVC.swift in Sources */,
+				D1A73B991F04C94A00F3E753 /* FancyButotn.swift in Sources */,
+				D1A73B951F04C63500F3E753 /* RoundButton.swift in Sources */,
 				D1A73B5D1F04AD6700F3E753 /* AppDelegate.swift in Sources */,
+				D1A73B901F04C39D00F3E753 /* FancyView.swift in Sources */,
+				D1A73B931F04C42900F3E753 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
