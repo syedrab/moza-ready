@@ -50,5 +50,26 @@ class SignInVC: UIViewController {
         }
     }
 
+    @IBOutlet weak var emailTextField: FancyField!
+    @IBOutlet weak var passwordTextField: FancyField!
+    @IBAction func siginTapped(_ sender: Any) {
+        if let email = emailTextField.text, let pwd = passwordTextField.text {
+            Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print("MOZA: Authenticate with Firebase using Email and Password!")
+                } else {
+                    Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print("MOZA: Unable to authenticate with Firebase using Email - \(String(describing: error))")
+                        } else {
+                            print("MOZA: Authenticate with Firebase using NEW Email and Password!")
+                        }
+                    })
+                    
+                }
+            })
+        }
+        
+    }
 }
 
