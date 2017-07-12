@@ -24,6 +24,7 @@
 		D1A73B971F04C81D00F3E753 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B961F04C81D00F3E753 /* FancyField.swift */; };
 		D1A73B991F04C94A00F3E753 /* FancyButotn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A73B981F04C94A00F3E753 /* FancyButotn.swift */; };
 		D1A73B9C1F04CC0200F3E753 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A73B9B1F04CC0200F3E753 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		D1E650101F155A57000326EC /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6500F1F155A57000326EC /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		D1A73B961F04C81D00F3E753 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		D1A73B981F04C94A00F3E753 /* FancyButotn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButotn.swift; sourceTree = "<group>"; };
 		D1A73B9B1F04CC0200F3E753 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../../Downloads/FacebookSDKs-iOS-4.24.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		D1E6500F1F155A57000326EC /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		DA0881498EACED107704E932 /* Pods-moza-readyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moza-readyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moza-readyTests/Pods-moza-readyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				D1A73B5E1F04AD6700F3E753 /* SignInVC.swift */,
+				D1E6500F1F155A57000326EC /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				D1A73B5F1F04AD6700F3E753 /* SignInVC.swift in Sources */,
 				D1A73B991F04C94A00F3E753 /* FancyButotn.swift in Sources */,
 				D1A73B951F04C63500F3E753 /* RoundButton.swift in Sources */,
+				D1E650101F155A57000326EC /* FeedVC.swift in Sources */,
 				D1A73B5D1F04AD6700F3E753 /* AppDelegate.swift in Sources */,
 				D1A73B901F04C39D00F3E753 /* FancyView.swift in Sources */,
 				D1A73B931F04C42900F3E753 /* Constants.swift in Sources */,

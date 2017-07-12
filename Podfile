@@ -11,6 +11,7 @@ target 'moza-ready' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper'
 
   target 'moza-readyTests' do
     inherit! :search_paths
