@@ -26,6 +26,7 @@
 		D1A73B9C1F04CC0200F3E753 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A73B9B1F04CC0200F3E753 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		D1E650101F155A57000326EC /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6500F1F155A57000326EC /* FeedVC.swift */; };
 		D1E650121F16C877000326EC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650111F16C877000326EC /* CircleView.swift */; };
+		D1E650141F1D66EB000326EC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650131F1D66EB000326EC /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		D1A73B9B1F04CC0200F3E753 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../../Downloads/FacebookSDKs-iOS-4.24.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		D1E6500F1F155A57000326EC /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		D1E650111F16C877000326EC /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		D1E650131F1D66EB000326EC /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		DA0881498EACED107704E932 /* Pods-moza-readyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moza-readyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moza-readyTests/Pods-moza-readyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +193,7 @@
 				D1A73B961F04C81D00F3E753 /* FancyField.swift */,
 				D1A73B981F04C94A00F3E753 /* FancyButotn.swift */,
 				D1E650111F16C877000326EC /* CircleView.swift */,
+				D1E650131F1D66EB000326EC /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				D1A73B5D1F04AD6700F3E753 /* AppDelegate.swift in Sources */,
 				D1A73B901F04C39D00F3E753 /* FancyView.swift in Sources */,
 				D1A73B931F04C42900F3E753 /* Constants.swift in Sources */,
+				D1E650141F1D66EB000326EC /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
