@@ -25,7 +25,7 @@ class FeedVC: UIViewController {
     
 
     @IBAction func signOutTapped(_ sender: Any) {
-        let removeSuccessful: Bool = KeychainWrapper.standard.remove(key: KEY_UID)
+        let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("MOZA: ID Removed from KeyChain - \(removeSuccessful)")
         try! Auth.auth().signOut()
         performSegue(withIdentifier: "goToSignIn", sender: nil)
