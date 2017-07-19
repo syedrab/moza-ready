@@ -26,6 +26,7 @@ class SignInVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            print("MOZA: ID Found in keychain")
             performSegue(withIdentifier: "goToFeed", sender: nil)
         }
     }

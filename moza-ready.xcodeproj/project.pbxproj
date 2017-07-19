@@ -28,6 +28,7 @@
 		D1E650121F16C877000326EC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650111F16C877000326EC /* CircleView.swift */; };
 		D1E650141F1D66EB000326EC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650131F1D66EB000326EC /* PostCell.swift */; };
 		D1E650171F1EF4CA000326EC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650161F1EF4CA000326EC /* DataService.swift */; };
+		D1E650191F1F9A9D000326EC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650181F1F9A9D000326EC /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		D1E650111F16C877000326EC /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		D1E650131F1D66EB000326EC /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		D1E650161F1EF4CA000326EC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D1E650181F1F9A9D000326EC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DA0881498EACED107704E932 /* Pods-moza-readyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moza-readyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moza-readyTests/Pods-moza-readyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 		D1A73B8C1F04B41C00F3E753 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D1E650181F1F9A9D000326EC /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				D1E650121F16C877000326EC /* CircleView.swift in Sources */,
 				D1A73B971F04C81D00F3E753 /* FancyField.swift in Sources */,
 				D1A73B5F1F04AD6700F3E753 /* SignInVC.swift in Sources */,
+				D1E650191F1F9A9D000326EC /* Post.swift in Sources */,
 				D1A73B991F04C94A00F3E753 /* FancyButotn.swift in Sources */,
 				D1A73B951F04C63500F3E753 /* RoundButton.swift in Sources */,
 				D1E650171F1EF4CA000326EC /* DataService.swift in Sources */,
