@@ -152,12 +152,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwL-Ti-Z3l">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="ToV-br-V9P">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="ToV-br-V9P">
                                         <rect key="frame" x="16" y="20" width="45" height="35"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="XKu-DY-k3T"/>
                                             <constraint firstAttribute="height" constant="35" id="fBV-vh-rqu"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Bwc-CW-gn6" appends="YES" id="mVo-Ey-Zes"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-FW-aQX">
                                         <rect key="frame" x="158" y="22.5" width="58.5" height="30.5"/>
@@ -181,13 +185,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="26K-Od-XaH">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="Qol-SR-epu" customClass="CircleView" customModule="moza_ready" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="Qol-SR-epu" customClass="CircleView" customModule="moza_ready" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.2468804121" green="0.68410700560000004" blue="0.99990302320000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="4IU-Wy-TqX"/>
                                                     <constraint firstAttribute="height" constant="49" id="RY5-A5-bsm"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="YSe-19-Hgc" appends="YES" id="zAS-vJ-isB"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jAN-yN-bH0" customClass="FancyField" customModule="moza_ready" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="9.5" width="209" height="30"/>
@@ -340,12 +348,23 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addImage" destination="Qol-SR-epu" id="h1U-2m-rf0"/>
                         <outlet property="signOut" destination="ToV-br-V9P" id="ehc-g4-8Oq"/>
                         <outlet property="tableView" destination="lJo-01-pdx" id="JO4-Rw-L3a"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="PtA-Sf-gc2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmX-kS-zrk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Bwc-CW-gn6">
+                    <connections>
+                        <action selector="signoutTapped:" destination="HSv-gl-NNM" id="xxG-y6-wKn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YSe-19-Hgc">
+                    <connections>
+                        <action selector="addImageTapped:" destination="HSv-gl-NNM" id="Z70-Gc-FgR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1126" y="139"/>
         </scene>
