@@ -27,6 +27,7 @@
 		D1E650101F155A57000326EC /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6500F1F155A57000326EC /* FeedVC.swift */; };
 		D1E650121F16C877000326EC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650111F16C877000326EC /* CircleView.swift */; };
 		D1E650141F1D66EB000326EC /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650131F1D66EB000326EC /* PostCell.swift */; };
+		D1E650171F1EF4CA000326EC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E650161F1EF4CA000326EC /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		D1E6500F1F155A57000326EC /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		D1E650111F16C877000326EC /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		D1E650131F1D66EB000326EC /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D1E650161F1EF4CA000326EC /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DA0881498EACED107704E932 /* Pods-moza-readyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moza-readyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moza-readyTests/Pods-moza-readyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 		D1A73B5B1F04AD6700F3E753 /* moza-ready */ = {
 			isa = PBXGroup;
 			children = (
+				D1E650151F1EF4A6000326EC /* Services */,
 				D1A73B9A1F04CBDF00F3E753 /* Frameworks */,
 				D1A73B911F04C41600F3E753 /* Uti */,
 				D1A73B8E1F04B42200F3E753 /* Controller */,
@@ -221,6 +224,14 @@
 				D1A73B9B1F04CC0200F3E753 /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1E650151F1EF4A6000326EC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D1E650161F1EF4CA000326EC /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		F2F254BC12881ABF54A27F2F /* Pods */ = {
@@ -526,6 +537,7 @@
 				D1A73B5F1F04AD6700F3E753 /* SignInVC.swift in Sources */,
 				D1A73B991F04C94A00F3E753 /* FancyButotn.swift in Sources */,
 				D1A73B951F04C63500F3E753 /* RoundButton.swift in Sources */,
+				D1E650171F1EF4CA000326EC /* DataService.swift in Sources */,
 				D1E650101F155A57000326EC /* FeedVC.swift in Sources */,
 				D1A73B5D1F04AD6700F3E753 /* AppDelegate.swift in Sources */,
 				D1A73B901F04C39D00F3E753 /* FancyView.swift in Sources */,

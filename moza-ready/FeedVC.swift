@@ -13,14 +13,29 @@ import SwiftKeychainWrapper
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var signOut: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        signOut.isUserInteractionEnabled = true
+        signOut.addGestureRecognizer(tapGestureRecognizer)
     }
-    
+
+    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        print("MOZA: ID Removed from KeyChain - \(removeSuccessful)")
+        try! Auth.auth().signOut()
+        performSegue(withIdentifier: "goToSignIn", sender: nil)
+        
+    // Your action
+    }
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

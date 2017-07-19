@@ -340,6 +340,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="signOut" destination="ToV-br-V9P" id="ehc-g4-8Oq"/>
                         <outlet property="tableView" destination="lJo-01-pdx" id="JO4-Rw-L3a"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="PtA-Sf-gc2"/>
                     </connections>
